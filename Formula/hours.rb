@@ -1,8 +1,8 @@
 class Hours < Formula
   desc "Local-first time tracking CLI"
   homepage "https://hours.sh"
-  url "https://registry.npmjs.org/@hours-sh/cli/-/cli-0.0.0-dev.tgz"
-  sha256 "51e0d6f94c7ff27b5fe9609c9f75b8846061e14ceb02acb001f317cd626082c7"
+  url "https://registry.npmjs.org/@hours-sh/cli/-/cli-0.0.0-dev.1.tgz"
+  sha256 "583cb9d74a4c7ba6d2140ae6bfd6a47a0cd935e68c2013d0049ef1b9f20980c3"
   license "UNLICENSED"
   depends_on "node"
 
@@ -13,6 +13,6 @@ class Hours < Formula
   end
 
   test do
-    assert_equal "0.0.0-dev", shell_output("#{bin}/hours --version").strip
+    assert_equal "0.0.0-dev.1", shell_output("#{bin}/hours --version").strip
   end
 end
